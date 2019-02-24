@@ -1,0 +1,13 @@
+syntax="proto2";
+package protobuf;
+message apiReq{
+required string action = 1;
+required string method = 2;
+required string systemId = 3;
+}
+
+message apiResp{
+required int32 code = 1;
+required string errmsg = 2;
+optional bytes data = 3;
+}
